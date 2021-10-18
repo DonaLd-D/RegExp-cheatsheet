@@ -203,5 +203,33 @@ let result = ohRegex.test(ohStr);
 
 ### Specify Only the Lower Number of Matches
 ```js
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/g; // Change this line
+let result = haRegex.test(haStr);
+```
+
+### Specify Exact Number of Matches
+```js
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/g; // Change this line
+let result = timRegex.test(timStr);
+```
+
+### Check for All or None
+```js
+let favWord = "favorite";
+let favRegex = /favou?rite/g; // Change this line
+let result = favRegex.test(favWord);
+```
+
+### Positive and Negative Lookahead
+```js
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);
+```
+
+### Check For Mixed Grouping of Characters
+```js
 
 ```
